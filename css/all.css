@@ -424,7 +424,7 @@ text-align: left;
 	width: 100px !important;
 	padding-bottom: 30px !important;
 	margin-top: 15px !important;
-	margin-left: 200px;
+	margin-left: 300px;
 }
 
 /* 地圖、表單RWD (平版)*/
@@ -439,6 +439,9 @@ text-align: left;
 	}
 	.form label,.form input{
 		width: 300px;
+	}
+	.pure-button{
+	margin-left: 200px;
 	}
 }
 /* 地圖、表單RWD (手機)*/
