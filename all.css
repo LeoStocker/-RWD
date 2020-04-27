@@ -1,0 +1,525 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*,*:before,*:after{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+body{
+	font-family: Microsoft JhengHei;
+}
+.wrap{
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.header{
+	height: 55px;
+	background-color: black;
+}
+.logo{
+	float:left;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+
+.logo a{
+	width: 240px;
+	height: 48px;
+	display: block;
+	background:url(../images/logo_w.svg) no-repeat;
+}
+
+.menu{
+	float: right;
+}
+.menu li{
+	width: 80px;
+	float:left;
+	padding-bottom: 5px;
+
+}
+.menu li a{
+	text-decoration:none;
+	display: block; 
+	font-family: Microsoft JhengHei;
+	font-size: 16px;
+	color: #FFFFFF;
+	line-height: 48px;
+	text-align: center;	
+}
+.clearfix{
+	clear:both;
+}
+
+li a:hover{
+	border-bottom: 2px solid white;
+}
+
+/*RWD header設計*/
+@media (max-width: 768px) {
+	.header{
+		height: auto;
+	}
+	.logo{
+		
+		margin: 0 auto;
+		float:none;
+		padding-left: 0px;
+		padding-top: 0px;
+	}
+	.logo a{
+		margin:0 auto;
+		width: 240px;
+		background-size: contain;
+	}
+	
+	.menu{
+		width: 100%;
+		height: auto;
+		background-color: black;
+	}
+	.menu li{
+		width: 33.33333%;
+		padding-bottom: 0px;
+		border:2px solid white;
+		border-collapse:collapse; 
+	}
+	.menu li a{
+		font-size: 22px;
+	}
+	
+	li a:hover{
+	border-bottom:none;
+	}
+
+	}
+
+
+.banner{
+	background: url(../images/banner1.png) no-repeat;
+	background-size: contain;
+	height: 400px;
+	padding-top: 100px;
+	max-width: 100%;
+}
+.slogan{
+	background-color: rgba(0,0,0,0.35);
+	max-width: 500px;
+	margin: 0 auto;
+	vertical-align: center;
+	padding: 10px;
+}
+.slogan h2,p{
+	color:white;
+	text-align: center;	
+	vertical-align: center;
+}
+.slogan h2{
+	font-size: 36px;
+	
+}
+
+/*banner RWD(平版)*/
+@media (max-width:768px) {
+	.banner{
+	background: url(../images/banner_m.png) no-repeat;
+	height: 540px;
+	background-size: contain;
+	padding-top: 150px;
+}
+
+	.slogan p{
+		font-size: 18px;
+	}
+}
+
+/*banner RWD(手機)*/
+@media (max-width:375px){
+	.banner{
+		height: 390px;
+		padding-top: 120px;
+		background-size: cover;
+	}
+	.slogan h2{
+	font-size: 26px;
+	
+}
+
+}
+.question{
+	background-color: #efe9e7;
+	padding: 20px;
+}
+.question h2{
+	text-align: center;
+	font-size: 26px;
+	font-weight: bolder;	
+}
+
+.feature{
+	max-width: 100%;
+	background-color: #efe9e7;
+}
+.feature li{
+	float:left;
+	width: 31%;
+	margin-left: 1%;
+	margin-right: 1%;
+	margin-top: 20px;
+}
+.feature img{
+	max-width: 100%;
+	border-radius: 180px;
+}
+.feature span{
+	font-size: 16px;
+	font-family: Microsoft JhengHei;
+	display: block;
+    font-size: 18px;
+    margin: 10px auto;
+    text-align: center;
+}
+.feature p{
+	padding-bottom: 20px;
+	color:black;
+	text-align: left;
+}
+.clearfix{
+	clear:both;
+}
+/*餐廳特色RWD(手機)*/
+@media (max-width:375px) {
+.feature li{
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+}
+.feature img {
+	border-radius: 50%;
+	width: 200px;
+}
+.feature p{
+	padding-left: 30px;
+	padding-right: 30px;
+
+}
+}
+
+
+.chef-intro{
+	background-color: #3d1101;
+}
+.chef-intro img{
+	float:left;
+	width: 50%;
+	padding-bottom: 20px;
+	padding-left:20px;
+	padding-top: 20px;
+}
+
+.chef-intro-text{
+	float: left;
+	width: 50%;
+}
+.chef-intro span{
+	font-family: Microsoft JhengHei;
+	color:#FFFFFF;
+	display: block;
+	padding-top: 100px;
+	padding-left: 30px;
+	font-size: 20px;
+}
+.chef-intro p{
+	font-family: Microsoft JhengHei;
+	color:#FFFFFF;
+	padding: 30px;
+	text-align: left;
+	line-height: 1.6;
+}
+.clearfix{
+	clear:both;
+}
+
+/* 主廚介紹RWD(平版)*/
+@media (max-width:768px) {
+	.chef-intro span{
+		padding-top:50px; 
+	}	
+	.chef-intro img{
+		height: 490px;
+		padding-top: 50px;
+	}
+	.chef-intro p{
+		padding-top: 0;
+
+	}
+}
+/* 主廚介紹RWD(手機)*/
+@media(max-width:375px){
+	.chef-intro img{
+		float:none;
+		width: 100%;
+		padding-left: 0px;
+		padding-top: 0px
+	}
+	.chef-intro-text{
+		float: none;
+		width:90%;
+	}
+	.chef-intro span{
+		padding-top: 0px;
+	}
+}
+
+
+
+.feedback{
+	background-color:  #efe9e7;
+}
+.feedback h2{
+	text-align: center;
+	font-size: 26px;
+	padding-top: 20px;
+	font-weight: bolder;
+}
+.feedback ul li{
+	display: inline-flex;
+}
+
+.feedback li{
+	margin-top: 20px;
+	float:left;
+	width: 33.33333%;
+	padding-left: 2%;
+	padding-right:1%;
+}
+.feedback img{
+	width: 67px;
+	height:67px;
+	border-radius: 180px;
+	margin-right: 13px;
+	display: block;
+
+}
+
+.feedback span{
+	display: block;
+line-height: 1.6;
+padding-bottom: 10px;
+text-align: left;
+}
+.feedback p{
+	color:black;
+	text-align: left;
+}
+.person{
+	float:right;
+}
+.clearfix:{
+	clear:both;
+}
+
+/*回饋RWD(手機)*/
+@media (max-width:375px) {
+	.feedback ul {
+	display: block;
+	}
+	.feedback li{
+		float:none;
+		width: 90%;
+		display:inline-block;
+	}
+}
+.question2,.map{
+	background-color: rgba(250, 250, 250, 0.7);
+}
+.question2 p{
+	font-weight: bolder;
+	text-align: center;
+	font-size: 26px;
+	padding:20px;
+	color:black;
+	line-height: 1.6;
+}
+.map{
+	position: relative;
+	height: 500px;
+}
+.map img{
+	height: 464px;
+	max-width: 500px;
+	position: absolute;
+	left:20px;
+	top:20px;
+}
+
+
+.form{
+	position: absolute;
+	top:30px;
+	left:550px;
+}
+
+.form label,.form input{
+	display: block;
+	width: 400px;
+}
+.form input{
+	height: 30px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+.pure-button{
+	width: 100px !important;
+	padding-bottom: 30px !important;
+	margin-top: 15px !important;
+	margin-left: 300px;
+}
+
+/* 地圖、表單RWD (平版)*/
+@media (max-width:768px) {
+	.map img{
+		height: 400px;
+		max-width: 420px;
+	}
+	.form{
+	top:30px;
+	left:450px;
+	}
+	.form label,.form input{
+		width: 300px;
+	}
+	.pure-button{
+		margin-left: 200px;
+	}
+}
+
+
+
+/* 地圖、表單RWD (手機)*/
+@media (max-width:375px){
+	.map{
+		height: 730px;
+	}
+	.map img {
+		max-width: 100%;
+	}
+	.map,.map img{
+		position: static;
+	}
+
+	.form{
+		width: 100%;
+		height: 300px;
+		display: block;
+		position: relative;
+		top:0;
+		left: 0;
+	}
+	.form label,.form input{
+		margin: 10px auto 10px auto;
+	}
+
+}
+
+.footer{
+	display: flex;
+	max-width: 100%;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	background-color: #efe9e7;
+}
+.about,.contact,.social-link{
+	max-width: 31%;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+.contact{
+	width:31%;
+}
+.footer h3{
+	font-weight: bolder;
+	font-size: 22px;
+}
+.about p{
+	color:black;
+	text-align:left;
+	line-height: 1.3; 
+}
+.contact li{
+	list-style:disc;
+	margin:3px 0 3px 0  ;
+}
+.footerlogo,.socialicon{
+	float:right;
+}
+.socialicon img{
+	width: 48px;
+	height: 48px;
+}
+.clearfix{
+	clear:both;
+}
+
+@media(max-width:375px){
+	.footer{
+		display: block;
+		padding-bottom: 10px;
+	}
+	.about,.contact,.social-link{
+		max-width:100%; 
+		margin:20px 10px 10px 30px;
+	}
+
+}
