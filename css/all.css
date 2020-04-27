@@ -131,17 +131,20 @@ li a:hover{
 	}
 	.menu li{
 		width: 33.33333%;
-		margin-top: 10px;
+		padding-bottom: 0px;
 		border:2px solid white;
+		border-collapse:collapse; 
 	}
 	.menu li a{
 		font-size: 22px;
 	}
 	
+	li a:hover{
+	border-bottom:none;
+	}
 
 	}
 
-/*RWD header設計結束*/
 
 .banner{
 	background: url(../images/banner1.png) no-repeat;
@@ -184,7 +187,8 @@ li a:hover{
 /*banner RWD(手機)*/
 @media (max-width:375px){
 	.banner{
-		height: 400px;
+		height: 390px;
+		padding-top: 120px;
 		background-size: cover;
 	}
 	.slogan h2{
@@ -416,9 +420,13 @@ text-align: left;
 	margin-bottom: 20px;
 	margin-top: 10px;
 }
-.submit{
-	border-radius: 180px;
+.pure-button{
+	width: 100px !important;
+	padding-bottom: 30px !important;
+	margin-top: 15px !important;
+	margin-left: 200px;
 }
+
 /* 地圖、表單RWD (平版)*/
 @media (max-width:768px) {
 	.map img{
